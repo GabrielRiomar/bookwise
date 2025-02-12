@@ -1,3 +1,12 @@
+<?php
+require('dados.php');
+$id = $_REQUEST['id'];
+$filtro =
+  array_filter($livros, function ($f_livro) use ($id) {
+    return $f_livro['id'] == $id;
+  });
+$livro = array_pop($filtro)
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,7 +32,17 @@
   </header>
 
   <main class="mx-auto max-w-screen-lg space-y-6">
-    Mudará aqui
+    <div class="p-2 rounded border-2 border-violet-500 rounded-md bg-white">
+      <div class="flex">
+        <div class="w-1/3">Imagem</div>
+        <div class="w-2/3">
+          <div class="font-semibold hover:underline"><a href="/livro.php?id=<?= $livro['id'] ?>"><?= $livro['titulo'] ?></a></div>
+          <div class="text-xs font-italic"><?= $livro['autor'] ?></div>
+          <div class="text-xs font-italic"> ⭐⭐⭐⭐⭐(X Avaliação)</div>
+        </div>
+      </div>
+      <div class=""><?= $livro['descricao'] ?></div>
+    </div>
   </main>
 </body>
 
