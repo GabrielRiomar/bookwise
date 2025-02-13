@@ -1,4 +1,5 @@
 <?php
+//Model
 require('dados.php');
 $id = $_REQUEST['id'];
 $filtro =
@@ -8,3 +9,5 @@ $filtro =
 $livro = array_pop($filtro);
 $view = 'livro';
 require('views/template/app.php');
+?>
+<!--  -->

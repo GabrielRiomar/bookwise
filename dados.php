@@ -9,4 +9,3 @@ $livros = [
   ['id' => 6, 'titulo' => 'x', 'autor' => 'y', 'descricao' => 'z'],
   ['id' => 7, 'titulo' => 'x', 'autor' => 'y', 'descricao' => 'z']
 ];
-?>;
