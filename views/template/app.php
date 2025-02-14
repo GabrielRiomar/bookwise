@@ -8,8 +8,8 @@
   <title>Book Wise</title>
 </head>
 
-<body class="bg-violet-300 text-stone-700">
-  <header class="bg-white text-violet-400 border border-violet-300 rounded-md mx-auto max-w-screen-lg font-bold">
+<body class="bg-indigo-400 text-stone-700">
+  <header class="bg-white text-indigo-500 border border-indigo-400 rounded-md mx-auto max-w-screen-lg font-bold">
     <nav class="flex justify-between px-8 py-4">
       <h1 class="tracking-wide text-xl">Book Wise</h1>
       <ul class="flex space-x-4">

@@ -6,5 +6,6 @@ $filtro =
     return $f_livro['id'] == $id;
   });
 $livro = array_pop($filtro);
-$view = 'livro';
-require('views/template/app.php');
+// $view = 'livro';
+// require('views/template/app.php');
+$view('livro');
