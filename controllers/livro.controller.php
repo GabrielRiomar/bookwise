@@ -1,13 +1,13 @@
 <?php
-//Model
 require('dados.php');
+
 $id = $_REQUEST['id'];
+
 $filtro =
   array_filter($livros, function ($f_livro) use ($id) {
     return $f_livro['id'] == $id;
   });
+
 $livro = array_pop($filtro);
-$view = 'livro';
-require('views/template/app.php');
-?>
-<!--  -->
+
+view('livro', ['livro' => $livro]);
